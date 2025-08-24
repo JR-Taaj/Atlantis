@@ -27,24 +27,55 @@
 }
 
 .nav-box #save {
-    border: solid 4px var(--background-element);
+    /* border: solid 4px var(--background-element); */
+    background: #d63418;
     margin: 3rem;
+
+    /* Ombre sous le bouton */
+    box-shadow: 0 4px 0 #a82710;
+    transition: all 0.25s ease;
 }
 
 .nav-settings-btn {
-    font-size: 50%;
-    border: solid 4px var(--element-color);
-    padding: 5px 10px;
-    border-radius: 10px;
-    width: 70%;
+    background: #f5b938; /* Jaune/orangé */
+    color: #fff; /* Texte blanc */
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 180px; /* légèrement plus large pour nav */
     text-align: center;
     margin: 0.5rem 0;
     cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    /* Ombre sous le bouton */
+    box-shadow: 0 4px 0 #c98d1d;
+    transition: all 0.25s ease;
 }
 
-.active-settings-BTN {
-    background: var(--element-color);
+/* Hover : bouton un peu plus clair */
+.nav-settings-btn:hover {
+    background: #e0a830;
 }
+
+/* Clic : bouton "enfoncé" */
+.nav-settings-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #c98d1d;
+}
+
+/* Actif / sélectionné */
+.nav-settings-btn.active-settings-BTN {
+    background: #d4a734; /* Jaune foncé */
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.4);
+}
+
 
 .container-settings {
     position: absolute;
@@ -299,11 +330,34 @@
 }
 
 .java-path-btn {
-    padding: 0.3rem 1rem;
-    background: var(--element-color);
-    border-radius: 15px;
-    margin: 0 1rem;
+    background: #f5b938; /* Jaune/orangé */
+    color: #fff; /* Texte blanc */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 12px; /* arrondi moderne */
+    margin: 0.5rem 1rem;
     cursor: pointer;
+    border: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Ombre sous le bouton (relief) */
+    box-shadow: 0 4px 0 #c98d1d;
+    transition: all 0.2s ease;
+}
+
+/* Hover : bouton plus clair */
+.java-path-btn:hover {
+    background: #e0a830;
+}
+
+/* Clic : effet enfoncé */
+.java-path-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #c98d1d;
 }
 
 /*******************************************************************************
@@ -336,11 +390,34 @@
 }
 
 .size-btn {
-    padding: 0.3rem 1rem;
-    background: var(--element-color);
-    border-radius: 15px;
-    margin: 0 1rem;
+    background: #f5b938; /* Jaune/orangé */
+    color: #fff; /* Texte blanc */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 12px; /* arrondi moderne */
+    margin: 0.5rem 1rem;
     cursor: pointer;
+    border: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Ombre sous le bouton (relief) */
+    box-shadow: 0 4px 0 #c98d1d;
+    transition: all 0.2s ease;
+}
+
+/* Hover : bouton légèrement éclairci */
+.size-btn:hover {
+    background: #e0a830;
+}
+
+/* Clic : bouton "enfoncé" */
+.size-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #c98d1d;
 }
 
 /*******************************************************************************
@@ -361,11 +438,35 @@
 }
 
 .max-files-btn {
-    padding: 0.3rem 1rem;
-    background: var(--element-color);
-    border-radius: 15px;
-    margin: 0 1rem;
+    background: #f5b938; /* Jaune/orangé */
+    color: #fff; /* Texte blanc */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 12px; /* arrondi moderne */
+    margin: 0.5rem 1rem;
     cursor: pointer;
+    border: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    /* Ombre sous le bouton (relief) */
+    box-shadow: 0 4px 0 #c98d1d;
+    transition: all 0.2s ease;
+}
+
+/* Effet hover : plus clair */
+.max-files-btn:hover {
+    background: #e0a830;
+}
+
+/* Effet clic : bouton "enfoncé" */
+.max-files-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #c98d1d;
 }
 
 .theme-btn {
