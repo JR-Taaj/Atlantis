@@ -120,7 +120,6 @@
 
 .account {
     background: var(--background-element);
-    border: solid 4px var(--background-element);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,9 +129,9 @@
     border-radius: 15px;
 }
 
-.account-select {
+/* .account-select {
     border: solid 4px var(--element-color);
-}
+} */
 
 .accounts-list #add {
     justify-content: center;

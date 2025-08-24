@@ -54,7 +54,55 @@
 .icon-restore-down:before { font-family: "Icons"; content: "\e90d"; }
 .icon-account-add:before { font-family: "Icons"; content: "\e901"; }
 .icon-account-delete:before { font-family: "Icons"; content: "\e902"; }
-.icon-settings:before { font-family: "Icons"; content: "\e909"; }
+/* Bouton container */
+.settings-btn {
+  background: #7a22d4; /* violet */
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* Effet relief */
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.4),   /* ombre portée foncée */
+    -6px -6px 12px rgba(255, 255, 255, 0.1); /* éclat clair */
+  
+  transition: all 0.2s ease-in-out;
+}
+
+/* Effet hover : bouton ressort */
+.settings-btn:hover {
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.5),
+    -4px -4px 8px rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Effet clic : bouton enfoncé */
+.settings-btn:active {
+  box-shadow:
+    inset 4px 4px 6px rgba(0, 0, 0, 0.6),
+    inset -4px -4px 6px rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+/* Icône engrenage */
+.icon-settings:before {
+  font-family: "Icons";   /* ta police custom */
+  content: "\e909";       /* engrenage */
+  font-size: 34px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Effet de rotation de l'icône au survol */
+.settings-btn:hover .icon-settings:before {
+  transform: rotate(20deg);
+}
 .icon-monitor:before { font-family: "Icons"; content: "\e90a"; }
 .icon-arrow:before { font-family: "Social-icons"; content: "\e002"; }
 

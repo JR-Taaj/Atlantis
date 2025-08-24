@@ -250,25 +250,35 @@
 }
 
 .play-instance {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    border: solid 3px var(--element-color);
-    border-radius: 15px;
-    height: 3.2rem;
-    padding-right: 1.9rem;
+    border: none;
+    background: none; /* optionnel si tu veux un fond transparent */
 }
 
 .play-btn {
     border: none;
-    border-radius: 10px;
-    background: none;
-    color: var(--color);
-    font-size: 2rem;
-    font-weight: bolder;
-    padding: 0 1.5rem;
-    pointer-events: none;
+    border-radius: 12px; /* arrondi */
+    background-color: #f4c542; /* jaune */
+    color: white; /* texte blanc */
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 12px 70px; /* petit peu + haut (12px), beaucoup + large (70px) */
+    cursor: pointer;
+    box-shadow: 0 3px 0 #d9a820; /* effet relief */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+
+/* Effet clic */
+.play-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #d9a820;
+}
+
+/* Effet hover */
+.play-btn:hover {
+    background-color: #ffdb4d; /* jaune un peu + clair */
+    transform: translateY(-2px) scale(1.05); /* petit zoom et léger décalage vers le haut */
+    box-shadow: 0 6px 0 #d9a820; /* ombre plus marquée */
 }
 
 .instance-select {
